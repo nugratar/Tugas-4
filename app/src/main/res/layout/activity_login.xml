@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#C2C2C2"
+            android:textSize="30sp"
+            android:text="LOGIN" />
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-condensed"
+            android:textColorHint="#C2C2C2"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:textColorHint="#C2C2C2"
+            android:hint="Password"/>
+
+        <CheckBox
+            android:id="@+id/showPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#C2C2C2"
+            android:text="Show Password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/resetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#C2C2C2"
+                android:text="Forgot password?"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D0806"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:text="SIGN IN"/>
+
+        <TextView
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#FFFFFF"
+            android:text="Don't have an Account?"/>
+
+    </LinearLayout>
+
+</LinearLayout>

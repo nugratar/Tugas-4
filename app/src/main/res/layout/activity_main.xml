@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#C2C2C2"
+            android:textSize="30sp"
+            android:text="REGISTER" />
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-condensed"
+            android:textColorHint="#C2C2C2"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:textColorHint="#C2C2C2"
+            android:hint="Password"/>
+
+        <CheckBox
+            android:id="@+id/show_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#C2C2C2"
+            android:text="Show Password" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D0806"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:text="SIGN UP" />
+
+        <TextView
+            android:id="@+id/btnSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#FFFFFF"
+            android:text="Already have an Account?"/>
+
+    </LinearLayout>
+
+</LinearLayout>
